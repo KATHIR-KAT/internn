@@ -1,0 +1,25 @@
+
+Terminal 1:
+
+cd ~/Downloads/file4
+php socks5_server.php
+
+
+Terminal 2:
+
+curl --socks5 127.0.0.1:1080 https://example.com -I
+
+
+Terminal 3:
+php -S 127.0.0.1:8001
+
+Then open:
+
+http://127.0.0.1:8001
+
+
+
+
+
+curl --socks5 127.0.0.1:1080 https://httpbin.org/delay/20
+This makes an client visible in webpage
